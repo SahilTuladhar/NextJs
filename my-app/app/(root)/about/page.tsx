@@ -1,5 +1,8 @@
 
 function about(){
+    
+    throw new Error("NOT IMPLEMENTED");
+
     return(
         <div>About the Page</div>
     )
