@@ -1,9 +1,19 @@
+
+ 
  import React from 'react'
  import Link from 'next/link'
+
  
 const page = () => {
+
+
    return (
-     <div>
+     <div 
+     style={{
+      display: 'flex',
+      flexDirection: 'column',
+    }}
+     >
        <h1> USER DETAILS</h1>
 
        <ul>

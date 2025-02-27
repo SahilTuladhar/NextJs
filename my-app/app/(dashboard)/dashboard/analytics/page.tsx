@@ -1,8 +1,22 @@
+
 import React from 'react'
 
+
 const page = () => {
+  
+
+
   return (
-    <div>analytics</div>
+    <div
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+    }}
+    >
+      analytics
+      
+    
+    </div>
   )
 }
 
