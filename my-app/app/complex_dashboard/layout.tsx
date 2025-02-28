@@ -1,4 +1,8 @@
+'use client'
+
 import Card from "../_components/card";
+import { useState , ReactElement} from "react";
+import React from "react";
 
 
 // complex_dashboard/layout.tsx
@@ -7,13 +11,21 @@ export default function complexDashboardLayout({
   users,
   revenue,
   notifications,
+  login
 }: {
   children: React.ReactNode;
   users: React.ReactNode;
   revenue: React.ReactNode;
   notifications: React.ReactNode;
+  login: React.ReactNode;
 }) {
-  return (
+ 
+
+  const [isLoggedIn , setIsLoggedIn] = useState(true);
+
+  if (isLoggedIn)
+  {
+  return(
     <div className="dashboard-container"
     style={{
         display: "flex",
@@ -50,4 +62,9 @@ export default function complexDashboardLayout({
       </div>
     </div>
   )
+} else {
+  return(
+    <Card>{login}</Card>
+  )
+}
 }

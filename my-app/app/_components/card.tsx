@@ -14,9 +14,9 @@ export default function Card({
         justifyContent: 'center',
         alignItems: 'center',
         boxShadow: ' 0px 4px 8px 0px rgba(0 , 0 , 0 , 0.2',
-        border: '1px solid black',
+        border: '2px solid #dddd',
         width: '98%',
-        height: '96%'
+        height: '96%',
 
     }
 

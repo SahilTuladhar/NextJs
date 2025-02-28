@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default async function NotificationSlot() {
  
   await new Promise((resolve) =>{
@@ -6,6 +8,15 @@ export default async function NotificationSlot() {
     } , 3000)
   })
 
-    return <div>🔔 Notification Content</div>;
+    return <div
+    style={{
+      display:'flex',
+      flexDirection:'column'
+    }}
+    >
+
+      <h1>🔔 Default Notification Content</h1>
+      <Link href='/complex_dashboard/archived'>Archived Notification</Link>
+    </div>;
   }
   
