@@ -1,0 +1,21 @@
+.outer-box{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imageGrid{
+    border: 1px solid red;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    /* width: 20%;
+    height: 50%; */
+    margin: 5px;
+    padding: 1rem;
+}
