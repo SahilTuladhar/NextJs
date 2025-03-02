@@ -25,3 +25,21 @@ export async function PATCH(
     return Response.json(DummyData)
 }
 
+
+export async function DELETE(
+    _request : Request , 
+    {params} : { params : Promise<{ id : string}>}
+) {
+
+    console.log("Current comments:", DummyData);
+
+    const {id} = await params
+    const index = DummyData.findIndex((user) => user.id === id)
+    const deletedUser = DummyData[index]
+
+    DummyData.splice(index , 1)
+
+    return Response.json(deletedUser)
+ 
+}
+
